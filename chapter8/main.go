@@ -1,13 +1,11 @@
 package main
 
-import (
-	"fmt"
-	m "golang-book/chapter8/math"
-)
+import "fmt"
+import "golang-book/chapter8/mymodule"
 
-func main() {
-	xs := []float64{1, 2, 3, 4}
-	avg := math.Average(xs)
+func main(){
+	xs := []float64{1,2,3,4}
+	avg := mymodule.Average(xs)
 	fmt.Println(avg)
-}
 
+}
